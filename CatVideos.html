@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cute Kittens</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Cute Kittens!</h1>
+    <button onclick="openRickroll()">Click here for cute kittens</button>
+
+    <script>
+        function openRickroll() {
+            var confirmLeave = confirm("You are about to leave this page. Do you want to continue?");
+            if (confirmLeave) {
+                var videoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                window.open(videoUrl);
+            }
+        }
+    </script>
+</body>
+</html>
